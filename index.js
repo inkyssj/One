@@ -15,9 +15,9 @@ client.on('ready', () => {
     console.log('✅ Bot listo!');
 });
 
-client.on('message', async(m) => {
-    const chat = await m.getChat();
-    console.log(m);
+client.on('message', async(message) => {
+    const chat = await message.getChat();
+    console.log(chat);
 });
 
 client.initialize();
