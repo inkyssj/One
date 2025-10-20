@@ -29,7 +29,7 @@ const saveMedia = (media) => {
 
 client.on('message', async(msg) => {
     const chat = await msg.getChat();
-    console.log(chat)
+    console.log(chat.lastMessage._data.quotedMsg)
 
     if (msg.hasMedia) {
         if (msg.isViewOnce) {
